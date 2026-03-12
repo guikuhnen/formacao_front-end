@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css</title>
+
+    <!-- 3 - Internal CSS -->
+    <style>
+      p {
+        color: green;
+        font-size: 30px;
+      }
+    </style>
+
+    <!-- 4 - External CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- 6 - Múltiplos CSS -->
+    <link rel="stylesheet" href="css/lists.css" />
+
+    <!-- 7 - Tarefa 2 -->
+    <link rel="stylesheet" href="css/titles.css" />
+  </head>
+  <body>
+    <!-- 1 - Inline CSS -->
+    <h1 style="color: blue">Mudar com cor o Inline</h1>
+    <h1 style="color: red">Mudar com cor o Inline 2</h1>
+
+    <!-- 2 - Múltiplas regras CSS -->
+    <h1 style="color: purple; font-size: 50px; border-bottom: 1px solid purple">
+      Mudar com múltiplas regras CSS
+    </h1>
+
+    <!-- 3 - Internal CSS -->
+    <p>Este é um parágrafo com cor definida pelo CSS interno.</p>
+    <p>Mais um</p>
+    <p>E outro</p>
+
+    <!-- 4 - External CSS -->
+    <h3>Este é um título com cor definida pelo CSS externo.</h3>
+
+    <!-- 5 - Ordem do CSS -->
+    <!-- Ordem de carregamento: inline > internal = external > padrão do navegador (O último carregado manda) -->
+    <p style="color: darkgray">Ordem do CSS (seria verde mas ficou cinza)</p>
+    <p>
+      Ordem do CSS (seria verde mas ficou cinza escuro pois o styles.css foi
+      carregado por último)
+    </p>
+
+    <!-- 6 - Múltiplos CSS -->
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+
+    <!-- 7 - Tarefa 2 -->
+    <h4>Este é um subtítulo com cor definida pelo CSS externo.</h4>
+
+    <!-- 8 - Classes -->
+    <p class="paragraph">Este é um parágrafo com uma classe CSS.</p>
+    <p class="paragraph">Este é outro parágrafo com a mesma classe CSS.</p>
+
+    <!-- 9 - IDs -->
+    <!-- IDs são únicos POR PÁGINA -->
+    <h1 id="unique-paragraph">Este é um título com um ID CSS.</h1>
+
+    <!-- Ordem dos seletores: id > class > seletor da tag (ID ganha de todos os outros) -->
+
+    <!-- 10 - Ordem dos seletores -->
+    <h2 id="algum-titulo" class="titulo">Algum titulo</h2>
+    <h2 class="titulo">Algum titulo</h2>
+    <h2>Algum titulo</h2>
+
+    <!-- 11 - Nome das cores -->
+    <p class="color-name">Este é um parágrafo com uma cor nomeada.</p>
+
+    <!-- 12 - Cor Hexadecimal -->
+    <p class="hex">Este é um parágrafo com uma cor hexadecimal.</p>
+    <p class="hex2">Este é um parágrafo 2 com uma cor hexadecimal.</p>
+
+    <!-- 14 - RGB -->
+    <p class="rgb">Este é um parágrafo com uma cor RGB.</p>
+
+    <!-- 15 - RGBA -->
+    <p class="rgba">
+      Este é um parágrafo com uma cor RGBA (com transparência).
+    </p>
+
+    <!-- 16 - HSL -->
+    <p class="hsl">Este é um parágrafo com uma cor HSL.</p>
+
+    <!-- 17 - Background Color -->
+    <p class="bg">Este é um parágrafo com uma cor de fundo.</p>
+
+    <!-- 18 - Background Opacity -->
+    <div class="bg-opacity">
+      <p>
+        Este é um parágrafo com uma cor de fundo e opacidade. As letras também
+        ficam opacas.
+      </p>
+    </div>
+
+    <!-- 19 - Background Opacity RGBa -->
+    <div class="bg-opacity-rgba">
+      <p>Este é um parágrafo com uma cor de fundo RGBa e opacidade.</p>
+    </div>
+
+    <!-- 20 - Background Images -->
+    <h1 class="bg-image">Este é um título com uma imagem de fundo.</h1>
+
+    <!-- 21 - Centralizar images -->
+    <div class="not-centered-bg"></div>
+    <br />
+    <div class="centered-bg"></div>
+  </body>
+</html>

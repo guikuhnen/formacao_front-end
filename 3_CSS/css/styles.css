@@ -1,0 +1,123 @@
+/* 4 - External CSS */
+body {
+  padding-bottom: 500px;
+}
+
+h3 {
+  color: darkgoldenrod;
+}
+
+p {
+  color: darkslategray;
+}
+
+/* Comentários */
+
+/* 8 - Classes */
+.paragraph {
+  background-color: black;
+  color: aqua;
+  padding: 5px;
+}
+
+/* 9 - IDs */
+#unique-paragraph {
+  background-color: black;
+  color: yellow;
+  padding: 5px;
+  font-size: 15px;
+}
+
+/* 10 - Ordem dos seletores */
+h2 {
+  border-bottom: 2px solid red;
+}
+
+.titulo {
+  border-bottom: 3px solid blue;
+}
+
+#algum-titulo {
+  border-bottom: 4px solid green;
+}
+
+/* 11 - Nome das cores */
+.color-name {
+  color: crimson;
+}
+
+/* 12 - Cores em hexadecimal */
+/* duas primeiras casa vermelho, duas do meio verde, duas últimas azul */
+/* #RRGGBB */
+.hex {
+  color: #55a398;
+}
+
+.hex2 {
+  color: #9d9e53;
+}
+
+/* 13 - Mais cores em hexadecimal */
+/* Cores repetidas 6 vezes ou em pares pode ser simplificado */
+/* #FFFFFF = #FFF */
+/* #112233 = #123 */
+
+/* 14 - RGB */
+.rgb {
+  color: rgb(0, 255, 0);
+}
+
+/* 15 - RGBA */
+.rgba {
+  color: rgba(255, 2, 45, 0.3);
+}
+
+/* 16 - HSL */
+/* HEX > RGB > HSL > Nomes */
+.hsl {
+  color: hsl(37, 20%, 50%);
+}
+
+/* 17 - Background Color */
+.bg {
+  background-color: #d8d3d3;
+}
+
+/* 18 - Background Opacity */
+.bg-opacity {
+  background-color: green;
+  opacity: 0.5;
+
+  p {
+    color: black;
+  }
+}
+
+/* 19 - Background Opacity RGBa */
+.bg-opacity-rgba {
+  background-color: rgba(116, 182, 116, 0.5);
+
+  p {
+    color: black;
+  }
+}
+
+/* 20 - Background Images */
+.bg-image {
+  background-image: url("../../2_HTML/img/nature.jpg");
+  padding: 10px;
+  color: #fff;
+}
+
+/* 21 - Centralizar images */
+.not-centered-bg,
+.centered-bg {
+  height: 200px;
+  width: 200px;
+  background-image: url("../../2_HTML/img/bridge.jpg");
+}
+
+.centered-bg {
+  background-position: center;
+  background-size: cover;
+}
