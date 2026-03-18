@@ -121,3 +121,370 @@ h2 {
   background-position: center;
   background-size: cover;
 }
+
+/* 22 - Altura e Largura */
+.height-width {
+  height: 100px;
+  width: 300px;
+  background-color: lightcoral;
+}
+
+.height-width-2 {
+  height: 250px;
+  width: 150px;
+  background-color: lightseagreen;
+}
+
+/* 23 - Padding */
+.without-padding,
+.with-padding {
+  background-color: #111;
+  color: #fff;
+  padding: 0;
+}
+
+.with-padding {
+  background-color: #333;
+  padding: 20px;
+}
+
+/* 24 - Padding individual */
+.padding-individual {
+  background-color: #222;
+  color: #fff;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+}
+
+/* 25 - Shorthand properties */
+.shorthand {
+  background-color: #444;
+  color: #fff;
+  padding: 6px 12px 18px 32px;
+}
+
+.shorthand-2 {
+  background-color: #444;
+  color: #fff;
+  padding: 6px 12px;
+  /* padding: 6px 12px 6px 12px */
+}
+
+/* 26 - Padding com Width */
+.without-border-box {
+  background-color: #444;
+  width: 400px;
+  padding: 50px;
+
+  p {
+    color: #fff;
+  }
+}
+
+.border-box {
+  background-color: #666;
+  width: 400px;
+  padding: 50px;
+  /* Limita o tamanho total do elemento levando em conta o padding, ex, o width fica = 400px - 50px em cada lado */
+  box-sizing: border-box;
+
+  p {
+    color: #fff;
+  }
+}
+
+/* 27 - Border */
+.border {
+  border: 5px solid red;
+  padding: 10px;
+}
+
+.border-2 {
+  border: 2px dotted #931;
+  padding: 25px;
+}
+
+/* 28 - Borda individual */
+.border-left {
+  border-left: 3px solid red;
+  background-color: #222;
+  padding: 25px;
+}
+
+.border-bottom {
+  border-bottom: 10px double #399;
+  background-color: #222;
+  padding: 25px;
+}
+
+/* 29 - Border radius */
+.rounded-p {
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.rounded-p-2 {
+  background-color: #000;
+  color: blue;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+/* 30 - Margin */
+.margin {
+  margin: 10px;
+  background-color: #222;
+}
+.margin-top {
+  margin-top: 50px;
+  background-color: #444;
+  padding: 10px;
+}
+
+.margin-shorthand {
+  background-color: #666;
+  margin: 10px 20px 30px 40px;
+}
+
+/* 31 - Box Model */
+.box-model {
+  margin: 20px;
+  padding: 15px 25px;
+  border: 3px solid #845;
+  border-radius: 7px;
+  width: 200px;
+  height: 100px;
+}
+
+/* 33 - Text alignment */
+.text-aligned {
+  text-align: right;
+}
+
+.container-center {
+  text-align: center;
+  width: 300px;
+  border: 1px solid #333;
+}
+
+/* 34 - Text decoration */
+.underline {
+  text-decoration: underline;
+}
+
+.line-trough {
+  text-decoration: line-through;
+}
+
+.remove-underline {
+  text-decoration: none;
+}
+
+/* text transform */
+.upper {
+  text-transform: uppercase;
+}
+
+.lower {
+  text-transform: lowercase;
+}
+
+/* letter spacing */
+.spacing {
+  letter-spacing: 5px;
+}
+
+/* Fontes */
+.serif {
+  font-family: Georgia;
+}
+
+.sans-serif {
+  font-family: Helvetica;
+}
+
+.monospace {
+  font-style: "Courier New";
+}
+
+.cursive {
+  font-family: cursive;
+}
+
+.fantasy {
+  font-family: fantasy;
+}
+
+/* Text style */
+.italic {
+  font-style: italic;
+}
+
+.oblique {
+  font-style: oblique;
+}
+
+/* font weight */
+.thin,
+.bold,
+.bolder {
+  font-family: Helvetica;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.bolder {
+  font-weight: 900;
+}
+
+/* Font size */
+.small {
+  font-size: 6px;
+}
+
+.big {
+  font-size: 78px;
+}
+
+/* Display */
+.inline-box {
+  width: 50px;
+  height: 50px;
+  background-color: #4f8;
+  margin: 10px;
+  display: inline-block;
+}
+
+.block {
+  background-color: #333;
+  display: block;
+  margin: 10px;
+}
+
+.invisible {
+  display: none;
+}
+
+/* static */
+.static {
+  position: static;
+  background-color: #391;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+}
+
+/* Relative */
+/* Move o elemento pela tela seguindo o fluxo do HTML */
+.relative {
+  position: relative;
+  background-color: #224;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  left: 40px;
+}
+
+/* Absolute */
+.absolute {
+  position: absolute;
+  background-color: #964;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  top: 2px;
+  right: 2px;
+}
+
+/* Absolute e relative */
+/* Um elemento com position absolute é ligado ao elemento mais próximo com posição relativa, se não, é ligado ao body */
+/* Com um elemento container com posição relative podemos controlar melhor um absolute */
+.relative-container {
+  width: 300px;
+  height: 300px;
+  border: 1px solid red;
+  margin-top: 120px;
+  position: relative;
+}
+
+.absolute-1,
+.absolute-2 {
+  width: 50px;
+  height: 50px;
+  background-color: #422;
+  position: absolute;
+}
+
+.absolute-1 {
+  top: 10px;
+  left: 10px;
+}
+
+.absolute-2 {
+  bottom: 10px;
+  right: 10px;
+}
+
+/* Fixed */
+.fixed {
+  width: 100px;
+  height: 100px;
+  background-color: #851;
+  border: 1px solid blue;
+  position: fixed;
+  top: 50px;
+  right: 100px;
+}
+
+/* sticky */
+/* Depende de onde é inserido no html e de um "fixador", exemplo o top: 10px; */
+.sticky {
+  width: 100px;
+  height: 100px;
+  background-color: #994;
+  border: 1px solid green;
+  position: sticky;
+  top: 10px;
+}
+
+/* z index */
+/* Eixo Z, profundidade */
+/* O elemento com maior valor prevalece */
+.absolute-3,
+.absolute-4,
+.absolute-5 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+.absolute-3 {
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: #123;
+}
+
+.absolute-4 {
+  top: 10px;
+  left: 10px;
+  background-color: #246;
+  z-index: 20;
+}
+
+.absolute-5 {
+  top: 40px;
+  left: 40px;
+  background-color: #453;
+  z-index: 1;
+}
