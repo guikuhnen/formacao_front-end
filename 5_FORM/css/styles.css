@@ -1,0 +1,26 @@
+body {
+  padding-bottom: 500px;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+div input,
+div label,
+div select,
+div textarea,
+div fieldset {
+  display: block;
+}
+
+div textarea {
+  width: 200px;
+  height: 80px;
+}
+
+.radio label,
+.radio input,
+.radio span {
+  display: inline-block;
+}
