@@ -1,0 +1,42 @@
+/* 2- Media query */
+h1 {
+  color: red;
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    color: blue;
+  }
+}
+
+/* 3 - min width (mobile first) */
+p {
+  background-color: red;
+  color: #000;
+}
+
+@media screen and (min-width: 800px) {
+  p {
+    background-color: green;
+    color: white;
+  }
+}
+
+/* 4 - Breakpoints mais utilizados para media query */
+/* 
+ * Extra small devices (phones, 600px and down)
+ * Small devices (tablets, 600px - 768px)
+ * Medium devices (mini desktops/notebooks, 768px - 992px)
+ * Large devices (large desktops, 992px and up)
+ */
+
+/* 5 - Landscape */
+h3 {
+  display: none;
+}
+
+@media screen and (orientation: landscape) {
+  h3 {
+    display: block;
+  }
+}
