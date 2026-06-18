@@ -1,0 +1,103 @@
+# Requests for testing the API endpoints related to services
+
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+  "name": "Serviço 2",
+  "description": "Descrição do serviço 2",
+  "price": 200,
+  "image": "https://conceitos.com/wp-content/uploads/Servico.jpg"
+}
+
+###
+
+GET http://localhost:3000/api/services
+
+###
+
+GET http://localhost:3000/api/services/6a3341d7f8e3bdd0530cd06e
+
+###
+
+PUT http://localhost:3000/api/services/6a3341d7f8e3bdd0530cd06e
+Content-Type: application/json
+
+{
+  "name": "Serviço 2 Atualizado",
+  "description": "Descrição do serviço 2 atualizada",
+  "price": 250,
+  "image": "https://conceitos.com/wp-content/uploads/Servico.jpg"
+}
+
+###
+
+DELETE http://localhost:3000/api/services/6a333feedb8c247c552e45a7
+
+###
+
+# Requests for testing the API endpoints related to parties
+
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+  "title": "Festa 2",
+  "author": "Guilherme",
+  "description": "Festa 2 descrição",
+  "budget": 9000,
+  "image": "https://bravobrasil.com/wp-content/uploads/2025/03/trezeromeia_aloalobahia.jpeg",
+  "services": [
+    {
+        "name": "Serviço 3",
+        "description": "Descrição do serviço 3",
+        "price": 3000,
+        "image": "https://conceitos.com/wp-content/uploads/Servico.jpg"
+    },
+    {
+        "name": "Serviço 4",
+        "description": "Descrição do serviço 4",
+        "price": 1600,
+        "image": "https://conceitos.com/wp-content/uploads/Servico.jpg"
+    }
+  ]
+}
+
+###
+
+GET http://localhost:3000/api/parties
+
+###
+
+GET http://localhost:3000/api/parties/6a3349245c356db4b7922424
+
+###
+
+PUT http://localhost:3000/api/parties/6a3349245c356db4b7922424
+Content-Type: application/json
+
+{
+  "title": "Festa 2 Atualizada",
+  "author": "Guilherme",
+  "description": "Festa 2 descrição atualizada",
+  "budget": 9500,
+  "image": "https://bravobrasil.com/wp-content/uploads/2025/03/trezeromeia_aloalobahia.jpeg",
+  "services": [
+    {
+        "name": "Serviço 3 Atualizado",
+        "description": "Descrição do serviço 3 atualizada",
+        "price": 3500,
+        "image": "https://conceitos.com/wp-content/uploads/Servico.jpg"
+    },
+    {
+        "name": "Serviço 4 Atualizado",
+        "description": "Descrição do serviço 4 atualizada",
+        "price": 1800,
+        "image": "https://conceitos.com/wp-content/uploads/Servico.jpg"
+    }
+  ]
+}
+
+###
+
+DELETE http://localhost:3000/api/parties/6a33489e5c356db4b7922423
