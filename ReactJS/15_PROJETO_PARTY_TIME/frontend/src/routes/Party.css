@@ -1,0 +1,20 @@
+.party-container {
+  h1,
+  h3,
+  p {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.actions-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.services-container {
+  justify-content: center;
+}
