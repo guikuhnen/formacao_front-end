@@ -2,6 +2,7 @@
 
 const mongoose = require("mongoose");
 const dns = require("node:dns/promises");
+require("dotenv").config();
 
 async function main() {
   try {
@@ -11,7 +12,7 @@ async function main() {
     mongoose.set("strictQuery", true);
 
     await mongoose.connect(
-      `mongodb+srv://admin:7iVVAg9Sbv6qbsy@cluster0.en4iaaw.mongodb.net/?appName=Cluster0`,
+      `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_CLUSTER}/?appName=${process.env.APP_NAME}`,
     );
 
     console.log("Conexão com BD feita com sucesso!");
