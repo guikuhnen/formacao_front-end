@@ -16,16 +16,27 @@ const deleteImageFile = (memory) => {
 // createMemory
 const createMemory = async (req, res) => {
   try {
-    const { title, description } = req.body;
+    const { title, description, favorite } = req.body;
     const src = `images/${req.file.filename}`;
 
-    if (!title || !description) {
+    if (
+      !title ||
+      title === undefined ||
+      title === "undefined" ||
+      !description ||
+      description === undefined ||
+      description === "undefined"
+    ) {
+      if (src) {
+        deleteImageFile({ src });
+      }
+
       return res
         .status(400)
         .json({ error: "Por favor, preencha todos os campos." });
     }
 
-    const newMemory = new MemoryModel({ title, src, description });
+    const newMemory = new MemoryModel({ title, src, description, favorite });
 
     await newMemory.save();
 
