@@ -1,0 +1,144 @@
+
+POST http://localhost:3000/memories
+Content-Type: multipart/form-data; boundary=Boundary123
+
+--Boundary123
+Content-Disposition: form-data; name="title"
+
+Minha primeira memoria
+--Boundary123
+Content-Disposition: form-data; name="description"
+
+Minha primeira memoria descricao
+--Boundary123
+Content-Disposition: form-data; name="image"; filename="imagem1.jpeg"
+Content-Type: image/jpeg
+
+< C:/Users/guijk/Downloads/imagem1.jpeg
+--Boundary123--
+
+###
+
+POST http://localhost:3000/memories
+Content-Type: multipart/form-data; boundary=Boundary123
+
+--Boundary123
+Content-Disposition: form-data; name="title"
+
+Minha segunda memoria
+--Boundary123
+Content-Disposition: form-data; name="description"
+
+Minha segunda memoria descricao
+--Boundary123
+Content-Disposition: form-data; name="image"; filename="imagem2.jpeg"
+Content-Type: image/jpeg
+
+< C:/Users/guijk/Downloads/imagem2.jpeg
+--Boundary123--
+
+###
+
+POST http://localhost:3000/memories
+Content-Type: multipart/form-data; boundary=Boundary123
+
+--Boundary123
+Content-Disposition: form-data; name="title"
+
+Minha terceira memoria
+--Boundary123
+Content-Disposition: form-data; name="description"
+
+Minha terceira memoria descricao
+--Boundary123
+Content-Disposition: form-data; name="image"; filename="imagem3.jpeg"
+Content-Type: image/jpeg
+
+< C:/Users/guijk/Downloads/imagem3.jpeg
+--Boundary123--
+
+###
+
+POST http://localhost:3000/memories
+Content-Type: multipart/form-data; boundary=Boundary123
+
+--Boundary123
+Content-Disposition: form-data; name="title"
+
+Minha terceira memoria excluir
+--Boundary123
+Content-Disposition: form-data; name="description"
+
+Minha terceira memoria excluir descricao
+--Boundary123
+Content-Disposition: form-data; name="image"; filename="imagem3.jpeg"
+Content-Type: image/jpeg
+
+< C:/Users/guijk/Downloads/imagem3.jpeg
+--Boundary123--
+
+###
+
+POST http://localhost:3000/memories
+Content-Type: multipart/form-data; boundary=Boundary123
+
+--Boundary123
+Content-Disposition: form-data; name="title"
+
+Minha terceira memoria atualizar
+--Boundary123
+Content-Disposition: form-data; name="description"
+
+Minha terceira memoria atualizar descricao
+--Boundary123
+Content-Disposition: form-data; name="image"; filename="imagem3.jpeg"
+Content-Type: image/jpeg
+
+< C:/Users/guijk/Downloads/imagem3.jpeg
+--Boundary123--
+
+###
+
+GET http://localhost:3000/memories
+
+###
+
+GET http://localhost:3000/memories/6a39c6f4a0ad633a48a29b04
+
+###
+
+DELETE http://localhost:3000/memories/6a39c9bae4e4a3666eaf4b54
+
+###
+
+PATCH http://localhost:3000/memories/6a39c8da8fa25c9fbb59da5c
+Content-Type: multipart/form-data; boundary=Boundary123
+
+--Boundary123
+Content-Disposition: form-data; name="title"
+
+Minha terceira memoria ATUALIZADA
+--Boundary123
+Content-Disposition: form-data; name="description"
+
+Minha terceira memoria ATUALIZADA descricao
+--Boundary123
+Content-Disposition: form-data; name="image"; filename="imagem1.jpeg"
+Content-Type: image/jpeg
+
+< C:/Users/guijk/Downloads/imagem1.jpeg
+--Boundary123--
+
+### favorite
+
+PATCH http://localhost:3000/memories/favorite/6a39c6f4a0ad633a48a29b04
+
+### comment
+
+PATCH http://localhost:3000/memories/6a39c6f4a0ad633a48a29b04/comment
+Content-Type: application/json
+
+{
+  "name": "Guilherme",
+  "text": "Comentário de teste 2"
+}
