@@ -1,18 +1,22 @@
+import type { ReactElement } from "react";
 import {
   BsFillEmojiFrownFill,
   BsFillEmojiHeartEyesFill,
   BsFillEmojiNeutralFill,
   BsFillEmojiSmileFill,
 } from "react-icons/bs";
-import type { JSX } from "react/jsx-runtime";
 import "./FinalThanks.css";
 
 type FinalThanksProps = {
   data: { name: string; review: string; comment: string };
 };
 
+type EmojiObject = {
+  [key: string]: ReactElement;
+};
+
 function FinalThanks({ data }: FinalThanksProps) {
-  const emojiData: { [key: string]: JSX.Element } = {
+  const emojiData: EmojiObject = {
     unsatisfied: <BsFillEmojiFrownFill />,
     neutral: <BsFillEmojiNeutralFill />,
     satisfied: <BsFillEmojiSmileFill />,
